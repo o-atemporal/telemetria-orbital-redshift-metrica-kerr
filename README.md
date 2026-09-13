@@ -6,7 +6,9 @@ O objetivo deste projeto é fornecer uma alternativa analítica direta à comple
 
 ---
 
-## 📐 Estrutura Matemática e Évolução do Modelo (Formas 1 a 20)
+## 📐 Estrutura Matemática e Evolução do Modelo (Formas 1 a 20)
+
+O **Princípio da Proporcionalidade Inversa** faz parte da obra *O Atemporal* e é fundamentalmente estruturado a partir da equação $\Phi \cdot v_a = \frac{k}{R}$. 
 
 Para viabilizar a modelagem computacional estrita no Sistema Internacional de Unidades (SI) e garantir que os compiladores realizem os cancelamentos de forma exata, este ecossistema adota a **unificação semântica dos termos de massa ($m \equiv M$)**. Como o arcabouço teórico estabelece a ancoragem do sistema na escala fixa de **1 Massa Solar**, a flutuação gráfica original entre caixa alta e baixa é padronizada para eliminar variáveis independentes órfãs.
 
@@ -53,4 +55,4 @@ $$R = \frac{\left( R_s \cdot \sqrt{\frac{m}{M}} \right) \cdot \left( \frac{2}{1 
 *   `simulacao_kerr.py`: Código-fonte principal em Python que processa o mapeamento tridimensional em múltiplos puros do raio de base ($R / r_s$), demonstrando a contração relativística induzida pelo spin extremo e as distorções observacionais de lente gravitacional.
 
 ## 📄 Licença e Uso
-Este ecossistema opera sob a égide da **CC BY 4.0**. A comunidade de astrofísica independente, cientistas de dados e desenvolvedores está autorizada a compartilhar, адапtar e criar ferramentas derivadas com base nestas equações, desde que seja mantida a atribuição obrigatória de autoria ao projeto oficial **O Atemporal / Antônio Marcos (2026)**.
+Este ecossistema opera sob a égide da **CC BY 4.0**. A comunidade de astrofísica independente, cientistas de dados e desenvolvedores está autorizada a compartilhar, adaptar e criar ferramentas derivadas com base nestas equações, desde que seja mantida a atribuição obrigatória de autoria ao projeto oficial **O Atemporal / Antônio Marcos (2026)**.
