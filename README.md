@@ -11,24 +11,6 @@ O objetivo deste projeto é fornecer uma alternativa analítica direta à comple
 
 Para viabilizar a modelagem computacional estrita no Sistema Internacional de Unidades (SI) e garantir que os compiladores de código realizem os cancelamentos de forma exata, este ecossistema adota a **unificação semântica dos termos de massa ($m \equiv M$)**. Como o arcabouço teórico estabelece a ancoragem do sistema na escala fixa de **1 Massa Solar**, a flutuação gráfica original entre caixa alta e baixa é padronizada para eliminar variáveis independentes órfãs.
 
-### 1️⃣ A Equação Original (Módulo I)
-A equação base que rege a relação entre a energia do sistema e a geometria espacial estabelece o equilíbrio entre o Fluxo ($\Phi = Mc^2$) e a Reatividade ($v_a$) enfrentando a Resistência Espacial ($R$):
-
-$$\Phi \cdot v_a = \frac{k}{R}$$
-
-Isolando o raio de interação telemétrica nesta estrutura, obtemos a fórmula fundamental de partida:
-
-$$R = \frac{k}{Mc^2 \cdot v_a}$$
-
-### 2️⃣ A 5ª Forma (Módulo II)
-No ambiente canônico e estático, quando o fluxo entra no regime crítico do Horizonte de Eventos, a velocidade angular trava no teto físico relativístico ($v_a = 1$). O termo de velocidade é absorvido, introduzindo-se o parâmetro adimensional de escala $\lambda$ como chave seletora:
-
-$$R_c = \lambda \cdot \frac{k}{\Phi}$$
-
-*   **Condição Quântica Limite ($\lambda = 1$):** O sistema atinge sua assinatura estável fundamental, reduzindo a expressão à proporção quântica inversa clássica:
-    
-    $$R_c = \frac{k}{\Phi}$$
-
 ### 3️⃣ O Axioma de Identidade (Módulo IV)
 No Módulo IV, a constante de identidade do sistema ($k$) é formalmente definida a partir das constantes universais ($G$ e $c$) atreladas à Massa Solar de referência ($M$):
 
