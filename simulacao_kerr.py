@@ -86,19 +86,19 @@ if __name__ == "__main__":
     
     print("\nMODO A: Telemetria Física Real (Objeto de Estudo: Supermassivo M87*)")
     print("-" * 75)
-    print("-> M87* Estático (Sem Rotação)       : {b_km_estatico:.3f} Bilhões de km  | Tabela: ~19.2")
-    print("-> M87* Rotação 90% (Geometria Pura)  : {b_km_kerr_polo:.3f} Bilhões de km  | Tabela: ~13.8")
-    print("-> M87* Rotação 90% (Visto da Terra)  : {b_km_kerr_terra:.3f} Bilhões de km  | Diâmetro: {b_km_kerr_terra*2:.1f} Bi km")
-    print("-> M87* Rotação Máxima (Spin = 1.0)   : {b_km_kerr_max:.3f} Bilhões de km  | Tabela: ~9.6")
+    print(f"-> M87* Estático (Sem Rotação)       : {b_km_estatico:.3f} Bilhões de km  | Tabela: ~19.2")
+    print(f"-> M87* Rotação 90% (Geometria Pura)  : {b_km_kerr_polo:.3f} Bilhões de km  | Tabela: ~13.8")
+    print(f"-> M87* Rotação 90% (Visto da Terra)  : {b_km_kerr_terra:.3f} Bilhões de km  | Diâmetro: {b_km_kerr_terra*2:.1f} Bi km")
+    print(f"-> M87* Rotação Máxima (Spin = 1.0)   : {b_km_kerr_max:.3f} Bilhões de km  | Tabela: ~9.6")
     print("=" * 75)
     
     # Gráfico de barras interativo
     print("\n   GRAFICO DE BARRAS NO TERMINAL (MÉTRICA DA SOMBRA VISÍVEL):")
     print("-" * 75)
-    print("Estático (chi=0.0) | " + "█" * int(b_km_estatico * 1.5) + f" {b_km_estatico:.1f} Bi km [Módulo Base]")
-    print("Puro     (chi=0.9) | " + "█" * int(b_km_kerr_polo * 1.5) + f" {b_km_kerr_polo:.1f} Bi km [Contração Geométrica]")
-    print("Máximo   (chi=1.0) | " + "█" * int(b_km_kerr_max * 1.5) + f"  {b_km_kerr_max:.1f} Bi km [Metade do Tamanho!]")
-    print("Terra    (chi=0.9) | " + "█" * int(b_km_kerr_terra * 1.5) + f" {b_km_kerr_terra:.1f} Bi km [Lente com {angulo_usuario}°]")
+    print(f"Estático (chi=0.0) | " + "█" * int(b_km_estatico * 1.5) + f" {b_km_estatico:.1f} Bi km [Módulo Base]")
+    print(f"Puro     (chi=0.9) | " + "█" * int(b_km_kerr_polo * 1.5) + f" {b_km_kerr_polo:.1f} Bi km [Contração Geométrica]")
+    print(f"Máximo   (chi=1.0) | " + "█" * int(b_km_kerr_max * 1.5) + f"  {b_km_kerr_max:.1f} Bi km [Metade do Tamanho!]")
+    print(f"Terra    (chi=0.9) | " + "█" * int(b_km_kerr_terra * 1.5) + f" {b_km_kerr_terra:.1f} Bi km [Lente com {angulo_usuario}°]")
     print("-" * 75)
     
     print("\nMODO B: Mapeamento de Camadas do Disco em Unidades Relativas (r_s)")
