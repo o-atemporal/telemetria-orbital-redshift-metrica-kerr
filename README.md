@@ -6,9 +6,7 @@ O objetivo deste projeto é fornecer uma alternativa analítica direta à comple
 
 ---
 
-## 📐 Estrutura Matemática e Evolução do Modelo (Formas 1 a 20)
-
-O **Princípio da Proporcionalidade Inversa** faz parte da obra *O Atemporal* e é fundamentalmente estruturado a partir da equação $\Phi \cdot v_a = \frac{k}{R}$. 
+## 📐 O Princípio da Proporcionalidade Inversa faz parte da obra O Atemporal e é fundamentalmente estruturado a partir da equação $\Phi \cdot v_a = \frac{k}{R}$.
 
 Para viabilizar a modelagem computacional estrita no Sistema Internacional de Unidades (SI) e garantir que os compiladores realizem os cancelamentos de forma exata, este ecossistema adota a **unificação semântica dos termos de massa ($m \equiv M$)**. Como o arcabouço teórico estabelece a ancoragem do sistema na escala fixa de **1 Massa Solar**, a flutuação gráfica original entre caixa alta e baixa é padronizada para eliminar variáveis independentes órfãs.
 
@@ -40,7 +38,7 @@ A constante de identidade do sistema ($k$) é formalmente definida a partir das 
 
 $$k = \frac{c^7}{4G^2M}$$
 
-Ao aplicar o limite crítico de advecção onde a reatividade atinge a velocidade da luz ($v_a = c$), a expressão trancada sob a raiz assume o comportamento polinomial simplificado que resolve o **Raio de Schwarzschild ($R_s$)** analiticamente sem o uso de tensores:
+Ao aplicar o limite crítico de advecção onde a reatividade atinge a velocidade da luz ($v_a = c$), a expression trancada sob a raiz assume o comportamento polinomial simplificado que resolve o **Raio de Schwarzschild ($R_s$)** analiticamente sem o uso de tensores:
 
 $$R = \sqrt{\frac{M \cdot c^3}{k}} = \sqrt{\frac{4G^2M^2}{c^4}} \implies R = \frac{2GM}{c^2} = R_s$$
 
