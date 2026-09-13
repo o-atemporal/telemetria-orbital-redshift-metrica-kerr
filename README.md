@@ -45,7 +45,8 @@ $$R = \sqrt{\frac{M \cdot c^3}{k}} = \sqrt{\frac{4G^2M^2}{c^4}} \implies R = \fr
 ### 5️⃣ A 20ª Forma (Métrica de Kerr e Solução Telemétrica Completa)
 A formulação final estende o modelo para buracos negros reais em rotação extrema, corrigindo tridimensionalmente as distorções do desvio para o vermelho (*redshift* $z$), do spin orbital ($\chi$) e do ângulo de inclinação ($\theta$) em relação à Terra:
 
-$$R = \left[ \sqrt{\frac{\sqrt{\dfrac{mc^3}{k}} \cdot \left( \dfrac{2}{1 + \sqrt{1 - \chi^2}} \right)}{1 - \dfrac{1}{(z + 1)^2}}} + \sqrt{\frac{GM}{c^2}} \sin \theta \right]^2$$
+$$R = \left[ \sqrt{\frac{\sqrt{\dfrac{mc^3}{k}}}{\left( 1 - \dfrac{1}{(z + 1)^2} \right) \cdot \left( \dfrac{2}{1 + \sqrt{1 - \chi^2}} \right)}} + \sqrt{\frac{GM}{c^2}} \sin \theta \right]^2$$
+
 
 ---
 
