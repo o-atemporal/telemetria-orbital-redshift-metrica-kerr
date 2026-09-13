@@ -1,9 +1,9 @@
 """
 ===============================================================================
-LABORATÓRIO COMPUTACIONAL O ATEMPORAL - VERSÃO DEFINITIVA COMPLETA
+LABORATÓRIO COMPUTACIONAL O ATEMPORAL - INTERATIVO E DEFINITIVO
 Princípio da Proporcionalidade Inversa (Antônio Marcos, 2026 - CC BY 4.0)
 
-Gráfico com Rotação Máxima (chi=1.0) e Modo B 100% Corrigido.
+Gráfico com Spin Máximo (chi=1.0) e Ângulo de Visão Dinâmico via Input.
 ===============================================================================
 """
 
@@ -41,14 +41,12 @@ def calcular_raio_oficial_definitivo(M_campo, m_fluxo, z, chi, theta_graus):
 def calcular_camada_disco_normalizada(z, chi, theta_graus):
     """
     Calcula o raio de uma camada do disco de acreção em múltiplos de r_s.
-    CORRIGIDO: Sem erros de digitação nas variáveis.
     """
     theta = math.radians(theta_graus)
     M = 1.0
     a = chi * M
     r_plus = M + math.sqrt(max(0.0, M**2 - a**2))
     
-    # Nome correto da variável com 'c'
     fator_redshift = 1.0 + (1.0 / (z + 0.05))
     termo_angular = 0.5 * (math.sin(theta)**2)
     
@@ -60,13 +58,25 @@ if __name__ == "__main__":
     z_limite = 100000.0                # Limite assintótico para isolar a geometria
     
     print("=" * 75)
-    print("   LABORATÓRIO COMPUTACIONAL O ATEMPORAL - FORMULAÇÃO OFICIAL REVISADA")
+    print("   LABORATÓRIO COMPUTACIONAL O ATEMPORAL - PARÂMETROS DINÂMICOS")
     print("=" * 75)
     
-    # Execução de todos os cenários, incluindo a rotação máxima
+    # --- ENTRADA DINÂMICA DO ÂNGULO ---
+    try:
+        entrada = input("Digite o ângulo de visão em graus para a Terra (Recomendado: 14 a 17): ")
+        angulo_usuario = float(entrada)
+    except ValueError:
+        print("[AVISO]: Valor inválido. Adotando o ângulo padrão de 15°.")
+        angulo_usuario = 15.0
+        
+    print("\n" + "-" * 75)
+    print(f"Processando simulação com Ângulo de Visão = {angulo_usuario}°...")
+    print("-" * 75)
+    
+    # Execução dos cenários
     r_estatico = calcular_raio_oficial_definitivo(massa_m87, massa_m87, z_limite, 0.0, 0)
     r_kerr_polo = calcular_raio_oficial_definitivo(massa_m87, massa_m87, z_limite, 0.90, 0)
-    r_kerr_terra = calcular_raio_oficial_definitivo(massa_m87, massa_m87, z_limite, 0.90, 17)
+    r_kerr_terra = calcular_raio_oficial_definitivo(massa_m87, massa_m87, z_limite, 0.90, angulo_usuario)
     r_kerr_max = calcular_raio_oficial_definitivo(massa_m87, massa_m87, z_limite, 1.0, 0)
     
     b_km_estatico = r_estatico / 1e12
@@ -74,25 +84,25 @@ if __name__ == "__main__":
     b_km_kerr_terra = r_kerr_terra / 1e12
     b_km_kerr_max = r_kerr_max / 1e12
     
-    print("MODO A: Telemetria Física Real (Objeto de Estudo: Supermassivo M87*)")
+    print("\nMODO A: Telemetria Física Real (Objeto de Estudo: Supermassivo M87*)")
     print("-" * 75)
-    print(f"-> M87* Estático (Sem Rotação)       : {b_km_estatico:.3f} Bilhões de km  | Tabela: ~19.2")
-    print(f"-> M87* Rotação 90% (Geometria Pura)  : {b_km_kerr_polo:.3f} Bilhões de km  | Tabela: ~13.8")
-    print(f"-> M87* Rotação 90% (Visto da Terra)  : {b_km_kerr_terra:.3f} Bilhões de km  | Imagem EHT Real")
-    print(f"-> M87* Rotação Máxima (Spin = 1.0)   : {b_km_kerr_max:.3f} Bilhões de km  | Tabela: ~9.6")
+    print("-> M87* Estático (Sem Rotação)       : {b_km_estatico:.3f} Bilhões de km  | Tabela: ~19.2")
+    print("-> M87* Rotação 90% (Geometria Pura)  : {b_km_kerr_polo:.3f} Bilhões de km  | Tabela: ~13.8")
+    print("-> M87* Rotação 90% (Visto da Terra)  : {b_km_kerr_terra:.3f} Bilhões de km  | Diâmetro: {b_km_kerr_terra*2:.1f} Bi km")
+    print("-> M87* Rotação Máxima (Spin = 1.0)   : {b_km_kerr_max:.3f} Bilhões de km  | Tabela: ~9.6")
     print("=" * 75)
     
-    # Gráfico de barras atualizado com a linha de Rotação Máxima 1.0
+    # Gráfico de barras interativo
     print("\n   GRAFICO DE BARRAS NO TERMINAL (MÉTRICA DA SOMBRA VISÍVEL):")
     print("-" * 75)
-    print(f"Estático (chi=0.0) | " + "█" * int(b_km_estatico * 1.5) + f" {b_km_estatico:.1f} Bi km [Módulo Base]")
+    print("Estático (chi=0.0) | " + "█" * int(b_km_estatico * 1.5) + f" {b_km_estatico:.1f} Bi km [Módulo Base]")
     print("Puro     (chi=0.9) | " + "█" * int(b_km_kerr_polo * 1.5) + f" {b_km_kerr_polo:.1f} Bi km [Contração Geométrica]")
     print("Máximo   (chi=1.0) | " + "█" * int(b_km_kerr_max * 1.5) + f"  {b_km_kerr_max:.1f} Bi km [Metade do Tamanho!]")
-    print("Terra    (chi=0.9) | " + "█" * int(b_km_kerr_terra * 1.5) + f" {b_km_kerr_terra:.1f} Bi km [Expansão da Lente Óptica]")
+    print("Terra    (chi=0.9) | " + "█" * int(b_km_kerr_terra * 1.5) + f" {b_km_kerr_terra:.1f} Bi km [Lente com {angulo_usuario}°]")
     print("-" * 75)
     
     print("\nMODO B: Mapeamento de Camadas do Disco em Unidades Relativas (r_s)")
-    print("Parâmetros da Maquete: Spin(chi) = 0.90 | Inclinação Angular = 30°")
+    print(f"Parâmetros da Maquete: Spin(chi) = 0.90 | Inclinação Orbital = {angulo_usuario}°")
     print("-" * 75)
     camadas = [
         ("Disco Externo Afastado ", 0.10), 
@@ -101,6 +111,6 @@ if __name__ == "__main__":
         ("Borda Interna (ISCO)    ", 2.50)
     ]
     for nome, z_obs in camadas:
-        r_rs = calcular_camada_disco_normalizada(z_obs, 0.90, 30)
+        r_rs = calcular_camada_disco_normalizada(z_obs, 0.90, angulo_usuario)
         print(f"-> {nome} (z = {z_obs:.2f}) -> R ≈ {r_rs:.2f} r_s")
     print("=" * 75)
