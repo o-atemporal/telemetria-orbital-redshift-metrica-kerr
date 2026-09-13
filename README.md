@@ -16,17 +16,21 @@ Ao transpor esse princípio filosófico para o tecido do espaço-tempo, demonstr
 
 ## 📐 Estrutura Matemática e Evolução do Modelo (Formas 1 a 20)
 
-Para viabilizar a modelagem computacional estrita no Sistema Internacional de Unidades (SI) e garantir que os compiladores realizem os cancelamentos de forma exata, este ecossistema adota a **unificação semântica dos termos de massa ($m \equiv M$)**. Como o arcabouço teórico estabelece a ancoragem do sistema na escala fixa de **1 Massa Solar**, a flutuação gráfica original entre caixa alta e baixa é padronizada para eliminar variáveis independentes órfãs.
+Para viabilizar a modelagem computacional estrita no Sistema Internacional de Unidades (SI) e garantir que os compiladores realizem os cancelamentos de forma exata, este ecossistema adota a **unificação semântica dos termos de massa ($m \equiv M$)**. Como o arcabouço teórico establishes a ancoragem do sistema na escala fixa de **1 Massa Solar**, a flutuação gráfica original entre caixa alta e baixa é padronizada para eliminar variáveis independentes órfãs.
 
 ### 1️⃣ A 1ª Forma (O Axioma Fundamental de Fluxo)
-A equação primária que rege o ecossistema estabelece o equilíbrio rígido entre o Fluxo de energia ($\Phi = Mc^2$) e a Velocidade de Reatividade do sistema ($v_a$) enfrentando a Resistência Espacial ($R$), calibrados pela constante métrica de identidade ($k$):
+A equação primária que rege o ecossistema estabelece a relação fundamental entre o Fluxo de energia ($\Phi = Mc^2$), a Velocidade de Reatividade do sistema ($v_a$) e a Resistência Espacial ($R$):
 
 $$\Phi \cdot v_a = \frac{k}{R}$$
 
-### 2️⃣ A 2ª Forma (Isolamento Radial Telemétrico)
-Derivada diretamente do Axioma Fundamental, a 2ª Forma isola geometricamente o raio de interação telemétrica ($R$). Ela demonstra de forma matemática pura a proporcionalidade inversa estrita: o tamanho da barreira radial é determinado pelo esmagamento do denominador quando o fluxo e a reatividade aumentam:
+### 2️⃣ A 2ª Forma (A Lei do Inverso do Quadrado)
+Evoluindo a dinâmica para campos de propagação esférica tridimensional, a 2ª Forma introduz a dependência quadrática da distância radial ($R^2$). A interação do fluxo energético com a reatividade do meio passa a decair rigorosamente de acordo com a geometria clássica das forças fundamentais da natureza:
 
-$$R = \frac{k}{\Phi \cdot v_a} \implies R = \frac{k}{Mc^2 \cdot v_a}$$
+$$\Phi \cdot v_a = \frac{k}{R^2}$$
+
+Isolando a barreira telemétrica, a raiz geométrica se estabelece como:
+
+$$R = \sqrt{\frac{k}{\Phi \cdot v_a}} \implies R = \sqrt{\frac{k}{Mc^2 \cdot v_a}}$$
 
 ### 3️⃣ A 5ª Forma (O Limite Quântico Canônico)
 No ambiente estático e confinado do Horizonte de Eventos, a velocidade de reatividade atinge o teto físico relativístico ($v_a = 1$). O termo de velocidade é absorvido, introduzindo-se o parâmetro adimensional de escala $\lambda$ como chave seletora de campo:
@@ -47,7 +51,7 @@ Ao aplicar o limite crítico de advecção onde a reatividade atinge a velocidad
 $$R = \sqrt{\frac{M \cdot c^3}{k}} = \sqrt{\frac{4G^2M^2}{c^4}} \implies R = \frac{2GM}{c^2} = R_s$$
 
 ### 5️⃣ A 20ª Forma (Métrica de Kerr e Solução Telemétrica Completa)
-A formulação final estende o modelo para buracos negros reais em rotação extrema, corrigindo tridimensionalmente as distorções do desvio para o vermelho (*redshift* $z$), do spin orbital ($\chi$) e do ângulo de inclinação ($\theta$) em relação à Terra:
+A formulation final estende o modelo para buracos negros reais em rotação extrema, corrigindo tridimensionalmente as distorções do desvio para o vermelho (*redshift* $z$), do spin orbital ($\chi$) e do ângulo de inclinação ($\theta$) em relação à Terra:
 
 $$R = \frac{\left( R_s \cdot \sqrt{\frac{m}{M}} \right) \cdot \left( \frac{2}{1 + \sqrt{1 - \chi^2}} \right)}{1 - \frac{1}{(z+1)^2}} + \left( \sqrt{\frac{GM}{c^2}} \sin\theta \right)^2$$
 
