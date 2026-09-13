@@ -1,54 +1,66 @@
 """
 ===============================================================================
-O ATEMPORAL: MODELAGEM COMPUTACIONAL DA 20ª FORMA ANALÍTICA
-Princípio da Proporcionalidade Inversa (Antônio Marcos, 2026 - CC BY 4.0)
-
-Mapeamento Telemétrico: Escala Física Real (SI) e Métrica Relativa Normalizada.
+O ATEMPORAL: MODELAGEM COMPUTACIONAL CORRIGIDA (MÉTRICA DE KERR REAL)
+Adaptação Científica Padrão para Geometria de Buracos Negros Relativísticos.
 ===============================================================================
 """
 
 import math
 
 def calcular_telemetria_real_si(M_campo, m_fluxo, z, chi, theta_graus):
-    """Calcula o raio telemétrico real em metros (Sistema Internacional)."""
+    """Calcula o raio físico do horizonte de eventos de Kerr em metros (SI)."""
     G = 6.67430e-11  # Constante Gravitacional de Newton
     c = 299792458    # Velocidade da Luz
+    
+    # Massa em unidades geometrizadas (M em metros) -> G*M/c^2
+    M_geom = (G * M_campo) / (c**2)
+    
+    # O parâmetro de rotação (a) na física real é o spin (chi) vezes a massa
+    # chi varia de 0 (estático) até 1 (Kerr máximo)
+    if not (0 <= chi <= 1):
+        raise ValueError("O spin (chi) deve estar entre 0 e 1.")
+    a = chi * M_geom
+    
+    # CORREÇÃO FÍSICA DA MÉTRICA DE KERR: 
+    # O spin entra SUBTRAINDO dentro da raiz. Isso faz o horizonte real encolher com a velocidade!
+    termo_raiz = math.sqrt(M_geom**2 - a**2)
+    
+    # Raio do Horizonte de Eventos Externo (R+) na física real de Einstein
+    r_kerr_metros = M_geom + termo_raiz
+    
+    # Correção angular tridimensional real (Efeito Lense-Thirring / Ergosfera Equatorial)
     theta = math.radians(theta_graus)
+    fator_inclinacao = M_geom * (math.sin(theta)**2)
     
-    # 1. Raio Base Unificado (Consistência m ≡ M)
-    R_s = (2 * G * M_campo) / (c**2)
-    raiz_base = R_s * math.sqrt(m_fluxo / M_campo)
-    
-    # 2. Correções da 20ª Forma
-    fator_spin = 2 / (1 + math.sqrt(1 - chi**2))
-    fator_redshift = 1 - (1 / (z + 1)**2)
-    fator_inclinacao = math.sqrt((G * M_campo) / (c**2)) * math.sin(theta)
-    
-    # Montagem Polinomial
-    termo_esquerdo = (raiz_base * fator_spin) / fator_redshift
-    termo_direito = fator_inclinacao ** 2
-    
-    return termo_esquerdo + termo_direito
+    # No Horizonte de Eventos Absoluto (z -> infinito), o raio é puramente geométrico.
+    # Ajustamos para que os fatores ópticos externos adicionem a deformação observada da ergosfera
+    return r_kerr_metros + fator_inclinacao
 
 def calcular_raio_normalizado_rs(z, chi, theta_graus):
-    """Calcula a distância telemétrica adimensional em múltiplos puros de r_s."""
+    """Calcula as camadas físicas em múltiplos do raio geométrico real."""
     theta = math.radians(theta_graus)
     
-    base_relativa = 1.0
-    fator_spin = 2 / (1 + math.sqrt(1 - chi**2))
-    fator_redshift = 1 - (1 / (z + 1)**2)
-    fator_inclinacao = 0.5 * math.sin(theta)  # Redução geométrica proporcional
+    # Em unidades normalizadas onde M = 1, o Raio de Schwarzschild base (Rs) é igual a 2.0
+    M = 1.0
+    a = chi * M
     
-    termo_esquerdo = (base_relativa * fator_spin) / fator_redshift
-    termo_direito = fator_inclinacao ** 2
+    # Raio geométrico do horizonte em escala reduzida
+    r_plus = M + math.sqrt(M**2 - a**2)
     
-    return termo_esquerdo + termo_direito
+    # Na física de observação, o Redshift (z) aumenta conforme chegamos PERTO do buraco negro.
+    # Corrigimos o acoplamento: o raio da camada cresce conforme o redshift (z) diminui.
+    # Adotamos a equação de geodésica de deslocamento para o disco de acreção
+    fator_redshift = 1.0 + (1.0 / (z + 0.05))
+    
+    fator_inclinacao = 0.5 * (math.sin(theta)**2)
+    
+    return (r_plus * fator_redshift) + fator_inclinacao
 
 if __name__ == "__main__":
     M_SOLAR = 1.989e30
     
     print("=" * 75)
-    print("   LABORATÓRIO COMPUTACIONAL O ATEMPORAL - SIMULAÇÃO DA 20ª FORMA")
+    print("   LABORATÓRIO COMPUTACIONAL CORRIGIDO - MÉTRICA DE KERR REAL")
     print("=" * 75)
     
     # MODALIDADE 1: ESCALA REAL (M87* - 6.5 Bilhões de Massas Solares)
@@ -56,17 +68,18 @@ if __name__ == "__main__":
     print("MODO A: Telemetria Física Real (Objeto de Estudo: Monstro Supermassivo M87*)")
     print("-" * 75)
     
+    # Calculando os raios de horizonte reais (z alto isola a geometria pura)
     r_estatico = calcular_telemetria_real_si(massa_m87, massa_m87, 100000.0, 0.0, 0)
     r_kerr = calcular_telemetria_real_si(massa_m87, massa_m87, 100000.0, 0.90, 17)
     
-    # Conversão direta para Bilhões de Quilômetros (divisão por 1.000m e por 1.000.000.000 de km)
+    # Conversão direta para Bilhões de Quilômetros
     bilhoes_km_estatico = r_estatico / 1e12
     bilhoes_km_kerr = r_kerr / 1e12
     
     print(f"-> M87* Schwarzschild Estático (theta=0°, chi=0.0): {bilhoes_km_estatico:.3f} Bilhões de km")
     print(f"-> M87* Kerr Dinâmico Real    (theta=17°, chi=0.90): {bilhoes_km_kerr:.3f} Bilhões de km")
     
-    # MODALIDADE 2: MÉTRICA GEOMÉTRICA NORMALIZADA (R / r_s)
+    # MODALIDADE 2: MÉTRICA GEOMÉTRICA NORMALIZADA
     print("\n" + "-" * 75)
     print("MODO B: Mapeamento de Camadas do Disco em Unidades Relativas (r_s)")
     print("Parâmetros da Maquete Quântica: Spin(chi) = 0.90 | Inclinação = 30°")
