@@ -41,7 +41,7 @@ A **15ª Forma** estabelece o cálculo do raio geométrico $R$ associado a pertu
 
 ### 📐 Equação Fundamental
 
-$$R = \sqrt{\frac{M \cdot c^2 \cdot v_a}{k}}$$
+$$R = \sqrt{\frac{Mc^2 \cdot v_a}{k}}$$
 
 ---
 
