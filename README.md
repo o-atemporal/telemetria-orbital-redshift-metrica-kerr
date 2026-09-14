@@ -51,7 +51,7 @@ O modelo está contido no domínio da **Geometria Relativística do Horizonte de
 
 * **$R$**: Raio resultante da telemetria radial.
 * **$M$**: Massa solar.
-* **$c$**: Velocidade da luz no vácuo.
+* **$c$**: Velocidade da luz.
 * **$v_a$**: Velocidade de advecção, definida pela relação:
   $$v_a = c - \text{velocidade da Luz}$$
 
