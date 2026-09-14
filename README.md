@@ -99,7 +99,7 @@ $$R = \sqrt{\frac{\Phi \cdot v_a}{k}}$$
 
 Definindo os parâmetros físicos para o limite relativístico extremo do sistema:
 
-$$\Phi = M c^2, \quad v_a = c, \quad K = \frac{c^7}{4G^2M}$$
+$$\Phi = M c^2, \quad v_a = c, \quad k = \frac{c^7}{4G^2M}$$
 
 Substituindo esses termos na equação invertida, resulta na convergência exata para a métrica clássica do **Raio de Schwarzschild**:
 
