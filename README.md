@@ -97,14 +97,21 @@ $$R = \sqrt{\frac{\Phi \cdot v_a}{k}}$$
 
 ### 🧮 Dedução no Limite Crítico
 
-Definindo os parâmetros físicos para o limite relativístico extremo do sistema:
+Abaixo é apresentada a resolução passo a passo partindo da equação estrutural relativística:
 
-$$\Phi = M c^2, \quad v_a = c, \quad k = \frac{c^7}{4G^2M}$$
+$$R = \sqrt{\frac{\Phi \cdot v_a}{k}}$$
 
-Substituindo esses termos na equação invertida, resulta na convergência exata para a métrica clássica do **Raio de Schwarzschild**:
+#### 1. Substituição dos Parâmetros Críticos ($\Phi = M c^2$, $v_a = c$, $k = \frac{c^7}{4G^2M}$):
 
-$$R = \frac{2GM}{c^2}$$
+$$R = \sqrt{\frac{(M c^2) \cdot c}{\frac{c^7}{4G^2M}}} = \sqrt{\frac{M c^3}{\frac{c^7}{4G^2M}}}$$
 
+#### 2. Simplificação e Agrupamento das Potências:
+
+$$R = \sqrt{\frac{M c^3 \cdot 4G^2M}{c^7}} = \sqrt{\frac{4G^2M^2c^3}{c^7}} = \sqrt{\frac{4G^2M^2}{c^4}}$$
+
+#### 3. Extração da Raiz (Convergência para o Raio de Schwarzschild):
+
+$$R = \sqrt{\left(\frac{2GM}{c^2}\right)^2} \implies R = \frac{2GM}{c^2}$$
 
 ### 5️⃣ A 20ª Forma (Métrica de Kerr e Solução Telemétrica Completa)
 A formulação final estende o modelo para buracos negros reais em rotação extrema, corrigindo tridimensionalmente as distorções do desvio para o vermelho (*redshift* $z$), do spin orbital ($\chi$) e do ângulo de inclinação ($\theta$) em relação à Terra:
