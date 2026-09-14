@@ -33,14 +33,51 @@ $$R_c = \lambda \cdot \frac{k}{\Phi}$$
     
     $$R_c = \frac{k}{\Phi}$$
 
-### 4️⃣ O Axioma de Identidade (Módulo IV)
-A constante de identidade do sistema ($k$) é formalmente definida a partir das constantes universais ($G$ e $c$) atreladas à Massa Solar de referência ($M$):
+# Módulo IV — Formas Relativísticas e Perturbações de Campo Extremo
+
+## 15ª Forma — Axioma Gerador de Telemetria Radial (A Equação da Capa)
+
+A **15ª Forma** estabelece o cálculo do raio geométrico $R$ associado a perturbações de campo extremo e telemetria radial nas proximidades de um horizonte de eventos.
+
+### 📐 Equação Fundamental
+
+$$R = \sqrt{\frac{M \cdot c^2 \cdot v_a}{k}}$$
+
+---
+
+### 🌐 Domínio e Variáveis
+
+O modelo está contido no domínio da **Geometria Relativística do Horizonte de Eventos / Métrica de Schwarzschild**.
+
+* **$R$**: Raio resultante da telemetria radial.
+* **$M$**: Massa solar.
+* **$c$**: Velocidade da luz no vácuo.
+* **$v_a$**: Velocidade de advecção, definida pela relação:
+  $$v_a = c - \text{velocidade da Luz}$$
+
+---
+
+### ⚙️ Definição da Identidade do Sistema ($k$)
+
+A constante de acoplamento ou identidade do sistema ($k$) é calculada em função da velocidade da luz, da constante gravitacional e da massa solar:
 
 $$k = \frac{c^7}{4G^2M}$$
 
-Ao aplicar o limite crítico de advecção onde a reatividade atinge a velocidade da luz ($v_a = c$), a expression trancada sob a raiz assume o comportamento polinomial simplificado que resolve o **Raio de Schwarzschild ($R_s$)** analiticamente sem o uso de tensores:
+Onde:
+* **$G$**: Constante gravitacional universal.
 
-$$R = \sqrt{\frac{M \cdot c^3}{k}} = \sqrt{\frac{4G^2M^2}{c^4}} \implies R = \frac{2GM}{c^2} = R_s$$
+---
+
+### 🎯 Função e Comportamento Limite
+
+A função principal desta equação é determinar o **Raio de Schwarzschild ($R_s$)** no **limite crítico de advecção** ($v_a = c$), convertendo o axioma gerador da capa na fronteira do horizonte do buraco negro.
+
+#### Demonstração no Limite Crítico ($v_a = c$):
+
+Substituindo $v_a = c$ e a identidade $k$ na equação fundamental, o sistema converge para a métrica clássica de Schwarzschild:
+
+$$\sqrt{\frac{M \cdot c^3}{k}} = R_s = \frac{2GM}{c^2}$$
+
 
 ### 5️⃣ A 20ª Forma (Métrica de Kerr e Solução Telemétrica Completa)
 A formulação final estende o modelo para buracos negros reais em rotação extrema, corrigindo tridimensionalmente as distorções do desvio para o vermelho (*redshift* $z$), do spin orbital ($\chi$) e do ângulo de inclinação ($\theta$) em relação à Terra:
