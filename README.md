@@ -76,7 +76,7 @@ A função principal desta equação é determinar o **Raio de Schwarzschild ($R
 
 Substituindo $v_a = c$ - velocidade da luz e  $k$ = identidade do sistema na equação fundamental, o sistema converge para a métrica clássica de Schwarzschild:
 
-$$\sqrt{\frac{M \cdot c^3}{k}} = R_s = \frac{2GM}{c^2}$$
+$$\sqrt{\frac{Mc^3}{k}} = R_s = \frac{2GM}{c^2}$$
 
 
 ### 🎯 Orgigem da Equação
