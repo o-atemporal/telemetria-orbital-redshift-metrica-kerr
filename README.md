@@ -79,6 +79,33 @@ Substituindo $v_a = c$ - velocidade da luz e  $k$ = identidade do sistema na equ
 $$\sqrt{\frac{M \cdot c^3}{k}} = R_s = \frac{2GM}{c^2}$$
 
 
+### 🎯 Orgigem da Equação
+
+A partir da relação fundamental de fluxo de advecção radial, temos:
+
+$$\Phi v_a = \frac{k}{R^2}$$
+
+Isolando o raio geométrico $R$, obtém-se:
+
+$$R = \sqrt{\frac{k}{\Phi v_a}}$$
+
+Ao aplicar a **inversão estrutural para o regime relativístico**, a equação assume a seguinte configuração:
+
+$$R = \sqrt{\frac{\Phi v_a}{K}}$$
+
+---
+
+### 🧮 Dedução no Limite Crítico
+
+Definindo os parâmetros físicos para o limite relativístico extremo do sistema:
+
+$$\Phi = M c^2, \quad v_a = c, \quad K = \frac{c^7}{4G^2M}$$
+
+Substituindo esses termos na equação invertida, resulta na convergência exata para a métrica clássica do **Raio de Schwarzschild**:
+
+$$R = \frac{2GM}{c^2}$$
+
+
 ### 5️⃣ A 20ª Forma (Métrica de Kerr e Solução Telemétrica Completa)
 A formulação final estende o modelo para buracos negros reais em rotação extrema, corrigindo tridimensionalmente as distorções do desvio para o vermelho (*redshift* $z$), do spin orbital ($\chi$) e do ângulo de inclinação ($\theta$) em relação à Terra:
 
