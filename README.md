@@ -81,7 +81,7 @@ $$\sqrt{\frac{M \cdot c^3}{k}} = R_s = \frac{2GM}{c^2}$$
 
 ### 🎯 Orgigem da Equação
 
-A partir da relação fundamental de fluxo de advecção radial, temos:
+A partir da relação fundamental de fluxo de advecção radial, 2ª Forma (A Lei do Inverso do Quadrado), temos:
 
 $$\Phi v_a = \frac{k}{R^2}$$
 
