@@ -109,7 +109,7 @@ $$R = \frac{2GM}{c^2}$$
 ### 5️⃣ A 20ª Forma (Métrica de Kerr e Solução Telemétrica Completa)
 A formulação final estende o modelo para buracos negros reais em rotação extrema, corrigindo tridimensionalmente as distorções do desvio para o vermelho (*redshift* $z$), do spin orbital ($\chi$) e do ângulo de inclinação ($\theta$) em relação à Terra:
 
-$$R = \left[ \sqrt{\frac{\sqrt{\dfrac{mc^3}{k}}}{\left( 1 - \dfrac{1}{(z + 1)^2} \right) \cdot \left( \dfrac{2}{1 + \sqrt{1 - \chi^2}} \right)}} + \sqrt{\frac{GM}{c^2}} \sin \theta \right]^2$$
+$$R = \left[ \sqrt{\frac{\sqrt{\dfrac{Mc^3}{k}}}{\left( 1 - \dfrac{1}{(z + 1)^2} \right) \cdot \left( \dfrac{2}{1 + \sqrt{1 - \chi^2}} \right)}} + \sqrt{\frac{GM}{c^2}} \sin \theta \right]^2$$
 
 
 ---
