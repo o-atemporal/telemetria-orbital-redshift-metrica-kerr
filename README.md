@@ -87,11 +87,11 @@ $$\Phi v_a = \frac{k}{R^2}$$
 
 Isolando o raio geométrico $R$, obtém-se:
 
-$$R = \sqrt{\frac{k}{\Phi v_a}}$$
+$$R = \sqrt{\frac{k}{\Phi \cdot v_a}}$$
 
 Ao aplicar a **inversão estrutural para o regime relativístico**, a equação assume a seguinte configuração:
 
-$$R = \sqrt{\frac{\Phi v_a}{K}}$$
+$$R = \sqrt{\frac{\Phi \cdot v_a}{k}}$$
 
 ---
 
