@@ -1,4 +1,23 @@
 """
+🌌 Telemetria para Inclinação Orbital e Redshift – Métricas de Kerr em Buracos Negros
+Implementação oficial computacional do ecossistema O Atemporal.
+
+Baseado nas soluções analíticas introduzidas na obra 'Equações de Fluxo Inverso'.
+Autor Oficial: Antônio Marcos
+Ano: 2026
+Licença: Creative Commons Attribution 4.0 International (CC BY 4.0)
+Repositorio: https://github.com
+"""
+
+__author__ = "Antônio Marcos (O Atemporal)"
+__copyright__ = "Copyright 2026, O Atemporal"
+__credits__ = ["Antônio Marcos"]
+__license__ = "CC BY 4.0"
+__version__ = "1.0.0"
+__maintainer__ = "Antônio Marcos"
+__status__ = "Production"
+
+"""
 ===============================================================================
 LABORATÓRIO COMPUTACIONAL O ATEMPORAL - SIMULADOR MULTI-ALVO COMPLETO
 Princípio da Proporcionalidade Inversa (Antônio Marcos, 2026 - CC BY 4.0)
