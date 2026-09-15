@@ -33,6 +33,27 @@ $$R_c = \lambda \cdot \frac{k}{\Phi}$$
     
     $$R_c = \frac{k}{\Phi}$$
 
+## 🌌 10ª Forma — Métrica Rotacional de Torção
+
+Equação matemática utilizada para modelar a dinâmica de sistemas sob rotação e torção do espaço-tempo.
+
+### 📐 Equação
+
+$$R_{rot} = \lambda \cdot \frac{k}{\Phi(1 + \Omega^2)}$$
+
+### 🔍 Parâmetros e Variáveis
+
+*   **$R_{rot}$**: Métrica rotacional de torção resultante.
+*   **$\lambda$**: Coeficiente de escala/proporcionalidade.
+*   **$k$**: Constante do sistema.
+*   **$\Phi$**: Fluxo ou potencial gravitacional do meio.
+*   **$\Omega$**: Velocidade angular do sistema.
+
+### ⚙️ Especificações Técnicas
+
+*   **Domínio**: Vórtices, Torque e Campos Vetoriais.
+*   **Função**: Modela o achatamento do raio em sistemas sob rotação e velocidade angular ($\Omega$), desacelerando a expansão pela torção do espaço (**Métrica de Kerr**).
+
 # Módulo IV — Formas Relativísticas e Perturbações de Campo Extremo
 
 ## 15ª Forma — Axioma Gerador de Telemetria Radial (A Equação da Capa)
