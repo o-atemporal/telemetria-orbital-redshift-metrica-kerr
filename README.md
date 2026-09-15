@@ -147,3 +147,10 @@ $$R = \left[ \sqrt{\frac{\sqrt{\dfrac{Mc^3}{k}}}{\left( 1 - \dfrac{1}{(z + 1)^2}
 
 ## 📄 Licença e Uso
 Este ecossistema opera sob a égide da **CC BY 4.0**. A comunidade de astrofísica independente, cientistas de dados e desenvolvedores está autorizada a compartilhar, adaptar e criar ferramentas derivadas com base nestas equações, desde que seja mantida a atribuição obrigatória de autoria ao projeto oficial **O Atemporal / Antônio Marcos (2026)**.
+
+<!-- 
+Palavras-Chave para Indexação  (SEO):
+tags: o atemporal, antonio marcos, equacoes de fluxo inverso, metrica de kerr, buracos negros, relatividade geral, fisica teorica, telemetria orbital, redshift orbital, simulacao kerr python, black hole telemetry, kerr metric python simulation, astrofisica independente 2026.
+-->
+
+
