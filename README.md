@@ -34,7 +34,7 @@ $$
 ### :five: A 5ª Forma (O Limite Quântico Canônico)
 No ambiente estático e confinado do Horizonte de Eventos, a velocidade de reatividade atinge o teto físico relativístico ($v_a = 1$). O termo de velocidade é absorvido, introduzindo-se o parâmetro adimensional de escala $\lambda$ como chave seletora de campo:
 
-$$R_c = \lambda \cdot \frac{k}{\Phi}$$
+$$R_c = \Large \lambda \cdot \frac{k}{\Phi}$$
 
 *   **Condição Quântica Limite ($\lambda = 1$):** O sistema atinge sua assinatura estável fundamental, revelando simetria com o formalismo da dualidade onda-partícula ($\lambda = \frac{h}{p}$):
     
