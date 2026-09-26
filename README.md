@@ -28,8 +28,6 @@ $$R = \sqrt{\frac{k}{\Phi \cdot v_a}} \implies R = \sqrt{\frac{k}{Mc^2 \cdot v_a
 
 ### 3ª Forma — Equação de Reatividade / Proporcionalidade Inversa:
 
----
-
 $$
 \Large \Phi = \frac{k}{v_a \cdot R}
 $$
