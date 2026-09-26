@@ -13,7 +13,7 @@ Para viabilizar a modelagem computacional estrita no Sistema Internacional de Un
 ### 1️⃣ A 1ª Forma (O Axioma Fundamental de Fluxo)
 A equação primária que rege o ecossistema estabelece a relação fundamental entre o Fluxo de energia ($\Phi = Mc^2$), a Velocidade de Reatividade do sistema ($v_a$) e a Resistência Espacial ($R$):
 
-$$\Large\ Phi \cdot v_a = \frac{k}{R}$$
+$$\Large \Phi \cdot v_a = \frac{k}{R}$$
 
 ### 2️⃣ A 2ª Forma (A Lei do Inverso do Quadrado)
 Evoluindo a dinâmica para campos de propagação esférica tridimensional, a 2ª Forma introduz a dependência quadrática da distância radial ($R^2$). A interação do fluxo energético com a reatividade do meio passa a decair rigorosamente de acordo com a geometria clássica das forças fundamentais da natureza:
