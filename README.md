@@ -137,7 +137,7 @@ $$R = \sqrt{\left(\frac{2GM}{c^2}\right)^2} \implies R = \frac{2GM}{c^2}$$
 ### 16ª Forma — Fator de Escala de Saturação Advectiva ($S$):
 
 $$
-\Large S = \frac{\sqrt{\frac{mc^3}{k}}}{R_{\text{real}}}
+\Large S = \frac{\sqrt{\frac{Mc^3}{k}}}{R_{\text{real}}}
 $$
 
 * **Domínio:** Geometria de Campo Próximo e Telemetria Advectiva.
