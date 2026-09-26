@@ -63,7 +63,7 @@ $$R_{rot} = \lambda \cdot \frac{k}{\Phi(1 + \Omega^2)}$$
 
 # Módulo IV — Formas Relativísticas e Perturbações de Campo Extremo
 
-## 15ª Forma — Axioma Gerador de Telemetria Radial (A Equação da Capa)
+## :one::five: 15ª Forma — Axioma Gerador de Telemetria Radial (A Equação da Capa)
 
 A **15ª Forma** estabelece o cálculo do raio geométrico $R$ associado a perturbações de campo extremo e telemetria radial nas proximidades de um horizonte de eventos.
 
