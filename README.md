@@ -134,35 +134,23 @@ $$R = \sqrt{\frac{M c^3 \cdot 4G^2M}{c^7}} = \sqrt{\frac{4G^2M^2c^3}{c^7}} = \sq
 
 $$R = \sqrt{\left(\frac{2GM}{c^2}\right)^2} \implies R = \frac{2GM}{c^2}$$
 
-# 🌌 16ª Forma — Fator de Escala de Saturação Advectiva (\(S\))
-
-Módulo matemático e computacional projetado para quantificar a razão de proximidade adimensional entre o raio crítico do horizonte de eventos (\(R_s\)) e a coordenada radial real (\(R_{\text{real}}\)). Este componente atua como o fator de saturação que escala as perturbações gravitacionais e espectroscópicas no entorno do corpo central.
-
-## 🚀 Domínio de Aplicação
-* Geometria de Campo Próximo
-* Telemetria Advectiva
+markdown# 16ª Forma — Fator de Escala de Saturação Advectiva ($S$)
 
 ---
 
-## 📐 Formulação Matemática
+### **• Domínio:** 
+**Geometria de Campo Próximo e Telemetria Advectiva.**
 
-A equação principal para o cálculo do fator de escala \(S\) é dada por:
-
-\[S = \frac{\sqrt{\frac{mc^3}{k}}}{R_{\text{real}}}\]
-
-### 🔹 Forma Simplificada
-Definindo o raio crítico do horizonte de eventos como \(R_s = \sqrt{\frac{Mc^3}{k}}\), a equação reduz-se a:
-
-\[S = \frac{R_s}{R_{\text{real}}}\]
-
-### 📊 Estados do Sistema
-
-| Condição | Estado do Sistema | Região Física |
-| :--- | :--- | :--- |
-| **\(S = 1\)** | \(R_{\text{real}} = R_s\) | O sistema atinge a **borda do horizonte de eventos**. |
-| **\(S < 1\)** | \(R_{\text{real}} > R_s\) | O sistema encontra-se no **campo externo de advecção**. |
+### **• Função:** 
+**Quantifica a razão de proximidade adimensional entre o raio crítico do horizonte de eventos e a coordenada radial real ($R_{\text{real}}$), atuando como o fator de saturação que escala as perturbações gravitacionais e espectroscópicas no entorno do corpo central.**
 
 ---
+
+$$
+S = \frac{\sqrt{\frac{mc^3}{k}}}{R_{\text{real}}}
+$$
+
+
 
 ### 5️⃣ A 20ª Forma (Métrica de Kerr e Solução Telemétrica Completa)
 A formulação final estende o modelo para buracos negros reais em rotação extrema, corrigindo tridimensionalmente as distorções do desvio para o vermelho (*redshift* $z$), do spin orbital ($\chi$) e do ângulo de inclinação ($\theta$) em relação à Terra:
