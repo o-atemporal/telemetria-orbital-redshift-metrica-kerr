@@ -134,7 +134,8 @@ $$R = \sqrt{\frac{M c^3 \cdot 4G^2M}{c^7}} = \sqrt{\frac{4G^2M^2c^3}{c^7}} = \sq
 
 $$R = \sqrt{\left(\frac{2GM}{c^2}\right)^2} \implies R = \frac{2GM}{c^2}$$
 
-markdown### 16ª Forma — Fator de Escala de Saturação Advectiva ($S$):
+markdown
+### 16ª Forma — Fator de Escala de Saturação Advectiva ($S$):
 
 $$
 S = \frac{\sqrt{\frac{mc^3}{k}}}{R_{\text{real}}}
