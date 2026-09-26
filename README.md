@@ -134,21 +134,19 @@ $$R = \sqrt{\frac{M c^3 \cdot 4G^2M}{c^7}} = \sqrt{\frac{4G^2M^2c^3}{c^7}} = \sq
 
 $$R = \sqrt{\left(\frac{2GM}{c^2}\right)^2} \implies R = \frac{2GM}{c^2}$$
 
-markdown# 16ª Forma — Fator de Escala de Saturação Advectiva ($S$)
-
----
-
-### **• Domínio:** 
-**Geometria de Campo Próximo e Telemetria Advectiva.**
-
-### **• Função:** 
-**Quantifica a razão de proximidade adimensional entre o raio crítico do horizonte de eventos e a coordenada radial real ($R_{\text{real}}$), atuando como o fator de saturação que escala as perturbações gravitacionais e espectroscópicas no entorno do corpo central.**
-
----
+markdown### 16ª Forma — Fator de Escala de Saturação Advectiva ($S$):
 
 $$
 S = \frac{\sqrt{\frac{mc^3}{k}}}{R_{\text{real}}}
 $$
+
+* **Domínio:** Geometria de Campo Próximo e Telemetria Advectiva.
+* **Função:** Quantifica a razão de proximidade adimensional entre o raio crítico do horizonte de eventos e a coordenada radial real ($R_{\text{real}}$), atuando como o fator de saturação que escala as perturbações gravitacionais e espectroscópicas no entorno do corpo central.
+
+Como $R_s = \sqrt{\frac{Mc^3}{k}}$, a equação também pode ser lida na forma simplificada $S = \frac{R_s}{R_{\text{real}}}$, onde:
+
+* $S = 1$: O sistema atinge a borda do horizonte de eventos ($R_{\text{real}} = R_s$).
+* $S < 1$: O sistema encontra-se no campo externo de advecção.
 
 
 
