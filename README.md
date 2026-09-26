@@ -25,12 +25,14 @@ Isolando a barreira telemétrica, a raiz geométrica se estabelece como:
 $$R = \sqrt{\frac{k}{\Phi \cdot v_a}} \implies R = \sqrt{\frac{k}{Mc^2 \cdot v_a}}$$
 
 
+# :three: 3ª Forma — Equação de Reatividade / Proporcionalidade Inversa:
 
-### 3ª Forma — Equação de Reatividade / Proporcionalidade Inversa:
+---
 
 $$
 \Large \Phi = \frac{k}{v_a \cdot R}
 $$
+
 
 
 ### 3️⃣ A 5ª Forma (O Limite Quântico Canônico)
