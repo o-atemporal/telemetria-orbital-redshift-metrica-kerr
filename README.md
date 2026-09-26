@@ -24,6 +24,17 @@ Isolando a barreira telemétrica, a raiz geométrica se estabelece como:
 
 $$R = \sqrt{\frac{k}{\Phi \cdot v_a}} \implies R = \sqrt{\frac{k}{Mc^2 \cdot v_a}}$$
 
+
+
+## 3ª Forma — Equação de Reatividade / Proporcionalidade Inversa:
+
+---
+
+$$
+\Large \Phi = \frac{k}{v_a \cdot R}
+$$
+
+
 ### 3️⃣ A 5ª Forma (O Limite Quântico Canônico)
 No ambiente estático e confinado do Horizonte de Eventos, a velocidade de reatividade atinge o teto físico relativístico ($v_a = 1$). O termo de velocidade é absorvido, introduzindo-se o parâmetro adimensional de escala $\lambda$ como chave seletora de campo:
 
